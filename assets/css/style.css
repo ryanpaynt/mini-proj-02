@@ -1,13 +1,27 @@
+:root{
+    --background: #242582;
+    --hints: #F64C72;
+    --text: white;
+    --border: #553D67;
+}
+
 h1{
-    border: 4px dashed black;
+    border: 4px dashed var(--border);
     text-align: center;
     padding: 16px;
+    color: var(--text);
+}
+
+body{
+    background-color: var(--background);
+    overflow-x: hidden;
 }
 
 h3{
-    border: 4px dashed black;
+    border: 4px dashed var(--border);
     text-align: center;
     padding: 16px;
+    color: var(--text);
 }
 
 .mid-section-top, .mid-section-bott{
@@ -17,12 +31,13 @@ transform: translateX(3.5%)
 .cards{
     display: inline-block;
     border-style: solid;
-    border-width: 1px;
+    border-color: #99738E;
+    border-width: 4px;
     padding: 10px;
     margin: 30px;
     flex: 1 0 250px;
     border-radius: 5%;
-    box-shadow: 5px 10px 10px gray;
+    box-shadow: 5px 5px 5px var(--hints);
     width: 25%;
     height: 225px;
     float: left;
@@ -31,10 +46,15 @@ transform: translateX(3.5%)
 .cards .card-header{
     text-align: center;
     transform: translateY(-100%);
-    background-color: white;
-    border: 1px solid black;
+    background-color: var(--text);
+    border: 1px solid var(--text);
     font-size: 24px;
     padding: 4px;
+    background-color: var(--border);
+    color: var(--text);
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    transition: all 0.35s;
 }
 
 .definition{
@@ -43,16 +63,15 @@ transform: translateX(3.5%)
     height: 40px;
     box-sizing: border-box;
     margin-bottom: 32px;
+    color: var(--text);
 }
 
 .code-body{
     border-style: solid;
-    border-width: 1px;
+    border-width: 2px;
+    border-color: var(--border);
     transform: translate(0,-16px);
-}
-    
-pre{
-    box-sizing: border-box;
+    color: var(--hints);
 }
 
 footer{
@@ -61,3 +80,16 @@ footer{
     padding-bottom: 24px;
     text-align: center;
 }
+
+.cards:hover > .card-header{
+    box-shadow: 0 0 32px var(--hints);
+    transform: translate(0,-12px);
+}
+
+.cards:hover{
+    box-shadow: 0 0 32px var(--hints);
+}
+
+
+
+
