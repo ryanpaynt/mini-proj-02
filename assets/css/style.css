@@ -11,5 +11,30 @@ h3{
 }
 
 .cards{
-    
+    display: inline-block;
+    border-style: solid;
+    border-width: 1px;
+    padding: 10px;
+    margin: 20px;
+    flex: 1 0 300px;
+    border-radius: 5%;
+    box-shadow: 5px 10px 10px gray;
+    width: 410px;
+    height: 250px;
+}
+
+.cards .card-header{
+    text-align: center;
+    transform: translateY(-100%);
+    background-color: white;
+    border: 1px solid black;
+}
+
+body{
+    height: 300px;
+}
+
+footer{
+    padding-top: 36px;
+    padding-bottom: 24px;
 }
