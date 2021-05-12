@@ -10,17 +10,22 @@ h3{
     padding: 16px;
 }
 
+.mid-section-top, .mid-section-bott{
+transform: translateX(3.5%)
+}
+
 .cards{
     display: inline-block;
     border-style: solid;
     border-width: 1px;
     padding: 10px;
-    margin: 20px;
-    flex: 1 0 300px;
+    margin: 30px;
+    flex: 1 0 250px;
     border-radius: 5%;
     box-shadow: 5px 10px 10px gray;
-    width: 410px;
-    height: 250px;
+    width: 25%;
+    height: 225px;
+    float: left;
 }
 
 .cards .card-header{
@@ -28,13 +33,31 @@ h3{
     transform: translateY(-100%);
     background-color: white;
     border: 1px solid black;
+    font-size: 24px;
+    padding: 4px;
 }
 
-body{
-    height: 300px;
+.definition{
+    transform: translate(0,-16px);
+    font-size: 14px;
+    height: 40px;
+    box-sizing: border-box;
+    margin-bottom: 32px;
+}
+
+.code-body{
+    border-style: solid;
+    border-width: 1px;
+    transform: translate(0,-16px);
+}
+    
+pre{
+    box-sizing: border-box;
 }
 
 footer{
+    clear: both;
     padding-top: 36px;
     padding-bottom: 24px;
+    text-align: center;
 }
